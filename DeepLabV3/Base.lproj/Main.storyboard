@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeepLabV3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-vv-p9R">
+                                <rect key="frame" x="67" y="322.5" width="700" height="467"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="700" id="OQL-OQ-smi"/>
+                                    <constraint firstAttribute="height" constant="467" id="uLI-Tt-YdS"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-cR-75c" customClass="DrawingSegmentationView" customModule="DeepLabV3" customModuleProvider="target">
+                                <rect key="frame" x="67" y="322.5" width="700" height="467"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="467" id="51k-mt-bF3"/>
+                                    <constraint firstAttribute="width" constant="700" id="KXt-Lx-3Di"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-EG-6wG" customClass="DrawingSegmentationView" customModule="DeepLabV3" customModuleProvider="target">
+                                <rect key="frame" x="67" y="322.5" width="700" height="467"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="467" id="whR-rj-KcS"/>
+                                    <constraint firstAttribute="width" constant="700" id="y7A-E4-S8o"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-6I-R7K">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Gcv-EG-6wG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6WO-aa-7z0"/>
+                            <constraint firstItem="Nu3-cR-75c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4e-hK-beP"/>
+                            <constraint firstItem="Nu3-cR-75c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FMm-Ae-DN1"/>
+                            <constraint firstItem="Gcv-EG-6wG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4c-MX-2pd"/>
+                            <constraint firstItem="5bJ-vv-p9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dph-EV-6DZ"/>
+                            <constraint firstItem="5bJ-vv-p9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nyW-AG-VGO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="98o-FS-lVj" appends="YES" id="asn-zq-zcs"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="d1M-6I-R7K" id="aYm-A9-WIH"/>
+                        <outlet property="detectionView" destination="Gcv-EG-6wG" id="lhf-gv-uR3"/>
+                        <outlet property="drawingView" destination="Nu3-cR-75c" id="gOg-wN-Ndl"/>
+                        <outlet property="mainImageView" destination="5bJ-vv-p9R" id="iVk-gh-FLC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="98o-FS-lVj">
+                    <connections>
+                        <action selector="onTap" destination="BYZ-38-t0r" id="UXw-Hp-1GS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.65467625899282" y="137.58992805755395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5" width="1985" height="2600"/>
+    </resources>
+</document>

@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDDD056825259EE5001E2AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD056725259EE5001E2AA7 /* AppDelegate.swift */; };
+		EDDD056A25259EE5001E2AA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD056925259EE5001E2AA7 /* SceneDelegate.swift */; };
+		EDDD056C25259EE5001E2AA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD056B25259EE5001E2AA7 /* ViewController.swift */; };
+		EDDD056F25259EE5001E2AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDD056D25259EE5001E2AA7 /* Main.storyboard */; };
+		EDDD057125259EE9001E2AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDD057025259EE9001E2AA7 /* Assets.xcassets */; };
+		EDDD057425259EE9001E2AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDD057225259EE9001E2AA7 /* LaunchScreen.storyboard */; };
+		EDDD057C2525A426001E2AA7 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDDD057B2525A426001E2AA7 /* DeepLabV3.mlmodel */; };
+		EDDD05802525A430001E2AA7 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDDD057E2525A430001E2AA7 /* 2.jpg */; };
+		EDDD05812525A430001E2AA7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDDD057F2525A430001E2AA7 /* 1.jpg */; };
+		EDDD05852525AA5A001E2AA7 /* DrawingSegmentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD05842525AA5A001E2AA7 /* DrawingSegmentationView.swift */; };
+		EDDD05892525AC59001E2AA7 /* SegmentationResultMLMultiArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD05882525AC59001E2AA7 /* SegmentationResultMLMultiArray.swift */; };
+		EDDD058B2525BDE6001E2AA7 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDDD058A2525BDE6001E2AA7 /* 3.jpg */; };
+		EDDD058D2525DF50001E2AA7 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EDDD058C2525DF50001E2AA7 /* YOLOv3Tiny.mlmodel */; };
+		EDDD05912525EA51001E2AA7 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDDD05902525EA51001E2AA7 /* 4.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EDDD056425259EE5001E2AA7 /* DeepLabV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLabV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDD056725259EE5001E2AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDDD056925259EE5001E2AA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EDDD056B25259EE5001E2AA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDDD056E25259EE5001E2AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDD057025259EE9001E2AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDDD057325259EE9001E2AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDDD057525259EE9001E2AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDD057B2525A426001E2AA7 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		EDDD057E2525A430001E2AA7 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		EDDD057F2525A430001E2AA7 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		EDDD05842525AA5A001E2AA7 /* DrawingSegmentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingSegmentationView.swift; sourceTree = "<group>"; };
+		EDDD05882525AC59001E2AA7 /* SegmentationResultMLMultiArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationResultMLMultiArray.swift; sourceTree = "<group>"; };
+		EDDD058A2525BDE6001E2AA7 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		EDDD058C2525DF50001E2AA7 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = YOLOv3Tiny.mlmodel; path = DeepLabV3/YOLOv3Tiny.mlmodel; sourceTree = SOURCE_ROOT; };
+		EDDD05902525EA51001E2AA7 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDDD056125259EE5001E2AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDDD055B25259EE5001E2AA7 = {
+			isa = PBXGroup;
+			children = (
+				EDDD056625259EE5001E2AA7 /* DeepLabV3 */,
+				EDDD056525259EE5001E2AA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDDD056525259EE5001E2AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD056425259EE5001E2AA7 /* DeepLabV3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDDD056625259EE5001E2AA7 /* DeepLabV3 */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD057D2525A430001E2AA7 /* images */,
+				EDDD058C2525DF50001E2AA7 /* YOLOv3Tiny.mlmodel */,
+				EDDD057B2525A426001E2AA7 /* DeepLabV3.mlmodel */,
+				EDDD056725259EE5001E2AA7 /* AppDelegate.swift */,
+				EDDD056925259EE5001E2AA7 /* SceneDelegate.swift */,
+				EDDD056B25259EE5001E2AA7 /* ViewController.swift */,
+				EDDD056D25259EE5001E2AA7 /* Main.storyboard */,
+				EDDD057025259EE9001E2AA7 /* Assets.xcassets */,
+				EDDD057225259EE9001E2AA7 /* LaunchScreen.storyboard */,
+				EDDD057525259EE9001E2AA7 /* Info.plist */,
+				EDDD05842525AA5A001E2AA7 /* DrawingSegmentationView.swift */,
+				EDDD05882525AC59001E2AA7 /* SegmentationResultMLMultiArray.swift */,
+			);
+			path = DeepLabV3;
+			sourceTree = "<group>";
+		};
+		EDDD057D2525A430001E2AA7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD05902525EA51001E2AA7 /* 4.jpg */,
+				EDDD058A2525BDE6001E2AA7 /* 3.jpg */,
+				EDDD057E2525A430001E2AA7 /* 2.jpg */,
+				EDDD057F2525A430001E2AA7 /* 1.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDDD056325259EE5001E2AA7 /* DeepLabV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDDD057825259EE9001E2AA7 /* Build configuration list for PBXNativeTarget "DeepLabV3" */;
+			buildPhases = (
+				EDDD056025259EE5001E2AA7 /* Sources */,
+				EDDD056125259EE5001E2AA7 /* Frameworks */,
+				EDDD056225259EE5001E2AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepLabV3;
+			productName = DeepLabV3;
+			productReference = EDDD056425259EE5001E2AA7 /* DeepLabV3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDDD055C25259EE5001E2AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Isobar;
+				TargetAttributes = {
+					EDDD056325259EE5001E2AA7 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = EDDD055F25259EE5001E2AA7 /* Build configuration list for PBXProject "DeepLabV3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDDD055B25259EE5001E2AA7;
+			productRefGroup = EDDD056525259EE5001E2AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDDD056325259EE5001E2AA7 /* DeepLabV3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDDD056225259EE5001E2AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDD057425259EE9001E2AA7 /* LaunchScreen.storyboard in Resources */,
+				EDDD05912525EA51001E2AA7 /* 4.jpg in Resources */,
+				EDDD057125259EE9001E2AA7 /* Assets.xcassets in Resources */,
+				EDDD05802525A430001E2AA7 /* 2.jpg in Resources */,
+				EDDD058B2525BDE6001E2AA7 /* 3.jpg in Resources */,
+				EDDD056F25259EE5001E2AA7 /* Main.storyboard in Resources */,
+				EDDD05812525A430001E2AA7 /* 1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDDD056025259EE5001E2AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDD056C25259EE5001E2AA7 /* ViewController.swift in Sources */,
+				EDDD058D2525DF50001E2AA7 /* YOLOv3Tiny.mlmodel in Sources */,
+				EDDD05852525AA5A001E2AA7 /* DrawingSegmentationView.swift in Sources */,
+				EDDD056825259EE5001E2AA7 /* AppDelegate.swift in Sources */,
+				EDDD056A25259EE5001E2AA7 /* SceneDelegate.swift in Sources */,
+				EDDD057C2525A426001E2AA7 /* DeepLabV3.mlmodel in Sources */,
+				EDDD05892525AC59001E2AA7 /* SegmentationResultMLMultiArray.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDDD056D25259EE5001E2AA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDD056E25259EE5001E2AA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDDD057225259EE9001E2AA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDD057325259EE9001E2AA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDDD057625259EE9001E2AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDDD057725259EE9001E2AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDDD057925259EE9001E2AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RMFWWMJL4;
+				INFOPLIST_FILE = DeepLabV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isobar.DeepLabV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EDDD057A25259EE9001E2AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RMFWWMJL4;
+				INFOPLIST_FILE = DeepLabV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isobar.DeepLabV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDDD055F25259EE5001E2AA7 /* Build configuration list for PBXProject "DeepLabV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDD057625259EE9001E2AA7 /* Debug */,
+				EDDD057725259EE9001E2AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDD057825259EE9001E2AA7 /* Build configuration list for PBXNativeTarget "DeepLabV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDD057925259EE9001E2AA7 /* Debug */,
+				EDDD057A25259EE9001E2AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDDD055C25259EE5001E2AA7 /* Project object */;
+}
